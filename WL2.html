@@ -1,56 +1,71 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>日本語の自己紹介</title>
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
-      margin: 20px;
-      text-align: center;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm Chris!</title>
 
-    header {
-      background-color: #1a5276;
-      padding: 20px;
-      color: #fff;
-    }
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
 
-    h1 {
-      margin-bottom: 10px;
-      font-size: 2em;
-    }
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
 
-    p {
-      margin-bottom: 15px;
-      font-size: 1.2em;
-    }
+        h2 {
+            color: #222;
+            font-size: 100px;
+        }
 
-    img {
-      border-radius: 50%;
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      margin-bottom: 20px;
-    }
-  </style>
+        h2 a {
+            text-decoration: none;
+            color: white;
+        }
+
+        h2 span {
+            transition: 0.5s;
+        }
+
+        h2:hover span:nth-child(1) {
+            margin-right: 10px;
+        }
+
+        h2:hover span:nth-child(2) {
+            margin-left: 30px;
+        }
+
+        h2 span:nth-child(1)::after {
+            opacity: 0;
+            transition: 2s;
+        }
+
+        h2:hover span:nth-child(1)::after {
+            content: "'";
+            opacity: 1;
+        }
+
+        h2:hover span {
+            color: white;
+            text-shadow: 0 0 10px #fff,
+                0 0 20px #fff,
+                0 0 40px #fff,
+                0 0 80px #fff;
+
+
+        }
+    </style>
 </head>
+
 <body>
-
-  <header>
-    <img src="your_avatar_url.jpg" alt="Your Avatar">
-    <h1>こんにちは！</h1>
-  </header>
-
-  <section>
-    <p>私の名前は [あなたの名前] です。</p>
-    <p>南昌出身で、現在は京都情報大学院大学に通っています。</p>
-    <p>趣味はゲームと寝ることです。</p>
-    <p>どうぞよろしくお願いします！</p>
-  </section>
-
+    <h2><span>I</span>M<span> Rai! </span></h2>
 </body>
+
 </html>
